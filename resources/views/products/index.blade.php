@@ -181,7 +181,7 @@
                         <h2>{{ $product->name }}</h2>
                         <p>{{ $product->description }}</p>
                         <p class="price">R$ {{ number_format($product->price, 2, ',', '.') }}</p>
-                        <button>Ver Produto</button>
+                        <a href="/checkout?product_id={{ $product->id }}" class="bg-blue-500 text-white px-6 py-2 rounded mt-4 inline-block hover:bg-blue-700 transition">Ver Produto</a>
                     </div>
                 @endforeach
             </div>
@@ -198,7 +198,7 @@
                             <h3>{{ $product->name }}</h3>
                             <p>{{ $product->description }}</p>
                             <p class="price">R$ {{ number_format($product->price, 2, ',', '.') }}</p>
-                            <button>Adicionar ao Carrinho</button>
+                            <a href="/checkout?product_id={{ $product->id }}" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 transition inline-block">Comprar</a>
                         </div>
                     </div>
                 @endforeach
