@@ -12,7 +12,7 @@ class VerifyCsrfToken extends Middleware
      * @var array
      */
    protected $except = [
-    '/process-payment', // Adicione a rota aqui
+    '/process-payment',
 ];
 
 }
